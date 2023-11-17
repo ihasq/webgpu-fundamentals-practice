@@ -7,6 +7,7 @@
 	<body>
 		<canvas id="target"></canvas>
 		<script type="text/wgsl" id="wgshader">
+
 			@group(0) @binding(0) var<storage, read_write> data: array<f32>;
 			
 			@compute @workgroup_size(1) fn computeSomething(
@@ -15,9 +16,10 @@
 				let i = id.x;
 				data[i] = data[i] * 2.0;
 			}
+
 		</script>
 		<script type="module">
-			import getGPUTemplate from "./gputemplate/mod.js";
+			import { getGPUTemplate } from "./gputemplate/mod.js";
 
 			(async function() {
 

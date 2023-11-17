@@ -12,7 +12,7 @@
  * 
  */
 
-export default async function(canvas) {
+export async function getGPUTemplate(canvas) {
 
 	if(!("gpu" in navigator)) {
 		return undefined;

@@ -5,7 +5,7 @@ npm i gputemplate
 ```
 ## usage
 ```javascript
-import getGPUTemplate from "gputemplate";
+import { getGPUTemplate }  from "gputemplate";
 
 const {
 	canvas,

@@ -7,6 +7,7 @@
 	<body>
 		<canvas id="target" style="width: 1920px; height: 1080px; display: block;"></canvas>
 		<script type="text/wgsl" id="wgshader">
+
 			@vertex fn vs(
 				@builtin(vertex_index) vertexIndex : u32
 			) -> @builtin(position) vec4f {
@@ -22,9 +23,10 @@
 			@fragment fn fs() -> @location(0) vec4f {
 				return vec4f(1.0, 0.0, 0.0, 1.0);
 			}
+
 		</script>
 		<script type="module">
-			import getGPUTemplate from "./gputemplate/mod.js";
+			import { getGPUTemplate } from "./gputemplate/mod.js";
 
 			(async function() {
 
