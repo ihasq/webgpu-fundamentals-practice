@@ -1,0 +1,12 @@
+{
+  "name": "gputemplate",
+  "version": "0.0.2",
+  "description": "WebGPU template generator",
+  "main": "mod.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["webgpu"],
+  "author": "ihasq",
+  "license": "MIT"
+}
